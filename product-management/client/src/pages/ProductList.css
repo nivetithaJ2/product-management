@@ -1,0 +1,127 @@
+
+/* Product List Page */
+.product-page {
+    width: 100%;
+    color: #172b4d;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.product-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.product-header p {
+    margin: 0;
+    color: #64748b;
+}
+
+.add-product-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #2878f0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.add-product-btn:hover {
+    background: #1762cf;
+}
+
+.product-card {
+    background: white;
+    padding: 24px;
+    border: 1px solid #e5eaf2;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(20, 40, 80, 0.04);
+    overflow-x: auto;
+}
+
+.product-card h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.product-count {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 700px;
+}
+
+.product-table th {
+    background: #f1f5fb;
+    color: #475569;
+    font-size: 13px;
+    padding: 15px 12px;
+    white-space: nowrap;
+}
+
+.product-table td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #edf0f5;
+    font-size: 14px;
+}
+
+.product-table tbody tr:hover {
+    background: #f8faff;
+}
+
+.product-name {
+    font-weight: 600;
+    color: #172b4d;
+}
+
+.category-badge {
+    display: inline-block;
+    background: #e8f2ff;
+    color: #2165c7;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.delete-btn {
+    background: #fff0f0;
+    color: #d93636;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #ffe0e0;
+}
+
+.empty-products {
+    padding: 30px;
+    text-align: center;
+    color: #64748b;
+}
+
+@media (max-width: 700px) {
+    .product-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .product-card {
+        padding: 14px;
+    }
+}
